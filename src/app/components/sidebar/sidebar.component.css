@@ -1,0 +1,27 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transition: all .4s ease;
+    left: 0;
+    opacity: 1;
+}
+
+ul.hidden {
+    opacity: 0.0;
+    left: -100px;
+}
+
+li {
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+button.rotate > span {
+    transform: rotate(180deg);
+}

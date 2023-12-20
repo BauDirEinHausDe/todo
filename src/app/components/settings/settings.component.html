@@ -1,0 +1,28 @@
+<app-message-box [message]="message"></app-message-box>
+<h1>Einstellungen</h1>
+
+<h2>Todo-Liste</h2>
+
+<ul>
+    @if(check1){
+    <input type="checkbox" id="todo1" name="todo1" checked>
+    }@else{
+    <input type="checkbox" id="todo1" name="todo1" >
+    }
+    <label for="todo1">Fertige Todos nach unten verschieben</label>
+    <br>
+    @if(check2){
+    <input type="checkbox" id="todo2" name="todo1" checked>
+    }@else{
+    <input type="checkbox" id="todo2" name="todo1" >
+    }
+    <label for="todo2">Löschen-Button anzeigen</label>
+        <br>
+        <button (click)="save()">Speichern</button>
+</ul>
+
+
+<h2>Dev-Funktionen</h2>
+<button (click)="deleteAll()">Alle Löschen</button>
+<br>
+<button (click)="createSamples()">Testdaten anlegen</button>

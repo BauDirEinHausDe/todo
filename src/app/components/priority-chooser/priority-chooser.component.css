@@ -1,0 +1,17 @@
+#priority {
+    visibility: hidden;
+}
+
+.prio-btn {
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 50%;
+    max-width: 3rem;
+    justify-content: center;
+}
+
+.active {
+    background-color: green;
+}
+

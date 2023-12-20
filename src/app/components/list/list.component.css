@@ -1,0 +1,22 @@
+table {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+th {
+    text-align: left;
+    width: 10rem;
+    min-width: 6rem;
+    padding: 0;
+    flex-grow: 1;
+}

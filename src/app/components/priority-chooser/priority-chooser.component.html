@@ -1,0 +1,15 @@
+<button class="prio-btn" [ngClass]="form.get('priority')?.getRawValue() == 'low' ? 'active' : ''" type="button" (click)="changePriorityValue('low')">
+    <span class="material-symbols-outlined">
+        change_history
+    </span>
+</button>
+<button class="prio-btn" [ngClass]="form.get('priority')?.getRawValue() == 'medium' ? 'active' : ''" type="button" (click)="changePriorityValue('medium')">
+    <span class="material-symbols-outlined">
+        star
+    </span>
+</button>
+<button class="prio-btn" [ngClass]="form.get('priority')?.getRawValue() == 'high' ? 'active' : ''" type="button" (click)="changePriorityValue('high')">
+    <span class="material-symbols-outlined">
+        error
+    </span>
+</button>

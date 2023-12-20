@@ -1,0 +1,84 @@
+<style>
+  /* Custom Styles */
+  body {
+    background-color: #f8f9fa;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,136,0,1) 10%, rgba(1,255,0,1) 20%, rgba(0,255,140,1) 30%, rgba(0,255,243,1) 40%, rgba(0,181,255,1) 50%, rgba(0,44,255,1) 60%, rgba(149,0,255,1) 70%, rgba(239,0,255,1) 80%, rgba(255,0,130,1) 90%, rgba(255,0,0,1) 100%);background-clip: text;
+    color: transparent;
+    background-size: 400% 100%;
+    animation: rainbowAnimation 1s infinite linear;
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    color: white;
+  }
+
+  .nav-link:hover {
+    transition: color 0.3s;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,136,0,1) 10%, rgba(1,255,0,1) 20%, rgba(0,255,140,1) 30%, rgba(0,255,243,1) 40%, rgba(0,181,255,1) 50%, rgba(0,44,255,1) 60%, rgba(149,0,255,1) 70%, rgba(239,0,255,1) 80%, rgba(255,0,130,1) 90%, rgba(255,0,0,1) 100%);background-clip: text;
+    color: transparent;
+    background-size: 400% 100%;
+    animation: rainbowAnimation 5.8s infinite linear, rotateAnimation 1s linear;
+  }
+
+  @keyframes rainbowAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+  }
+
+  @keyframes rotateAnimation {
+    0% { transform: rotate(0deg) translateX(0) translateY(0); }
+    50% { transform: rotate(180deg) translateX(20px) translateY(10px); }
+    100% { transform: rotate(360deg) translateX(0px) translateY(0); }
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#" routerLink="/">Your TodoApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/new">New Task</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/settings">Settings</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Bootstrap JS and dependencies (Make sure you include jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+

@@ -1,0 +1,12 @@
+<ul [ngClass]="showSidebar ? '' : 'hidden'">
+    <li (click)="sortByCategory($event)">Alle</li>
+    <li (click)="sortByCategory($event)">Hausarbeit</li>
+    <li (click)="sortByCategory($event)">Finanzen</li>
+    <li (click)="sortByCategory($event)">Schule</li>
+    <li (click)="sortByCategory($event)">Verein</li>
+</ul>
+<button [ngClass]="showSidebar ? '' : 'rotate'" (click)="toggleSidebar()">
+    <span class="material-symbols-outlined">
+        arrow_back_ios
+    </span>
+</button>

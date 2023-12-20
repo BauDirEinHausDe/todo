@@ -1,0 +1,12 @@
+.form-wrapper {
+    margin: 10% 25% 0 25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#priority {
+    visibility: hidden;
+}

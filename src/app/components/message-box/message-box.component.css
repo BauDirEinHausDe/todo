@@ -1,0 +1,14 @@
+.message-box {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.error-background {
+    background-color: #ff8c8c;
+}
+
+.success-background {
+    background-color: #5cb85c;
+}

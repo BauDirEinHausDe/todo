@@ -1,0 +1,24 @@
+<h1>Todos</h1>
+<app-message-box [message]="message"></app-message-box>
+<app-sidebar (categorySort)="sortByCategory($event);"></app-sidebar>
+<input type="text" (keyup)="sortByQuery($event)" />
+<table>
+  <thead>
+    <tr>
+      <th>Erledigt</th>
+      <th>Priorität</th>
+      <th>ID</th>
+      <th>Bezeichnung</th>
+      <th>Fällig bis</th>
+      <th>Kategorie</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(todo of todos; track todo.id) {
+      <app-list-entry
+       [todo]="todo"
+       (message)="updateMessage($event)"></app-list-entry>
+    }
+  </tbody>
+</table>

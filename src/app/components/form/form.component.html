@@ -1,0 +1,29 @@
+<app-message-box [message]="message" [error]="error"></app-message-box>
+<div class="form-wrapper">
+    <div class="header">
+        <h2>Neues Todo</h2>
+
+    </div>
+    <form [formGroup]="applyForm" (submit)="submit();">
+        <app-priority-chooser [formGroup]="applyForm"></app-priority-chooser>
+        <br>
+        <label for="label">Bezeichnung</label>
+        <input id="label" type="text" formControlName="label" />
+        <br>
+        <label for="date">Fällig bis</label>
+        <input id="date" type="datetime-local" formControlName="date" />
+        <br>
+        <label for="category">Kategorie</label>
+        <select id="category" formControlName="category" required>
+            <option value="Hausarbeit">Hausarbeit</option>
+            <option value="Finanzen">Finanzen</option>
+            <option value="Schule">Schule</option>
+            <option value="Verein">Verein</option>
+        </select>
+        <br>
+        <button type="submit" class="primary">Speichern</button>
+
+
+    </form>
+
+</div>
